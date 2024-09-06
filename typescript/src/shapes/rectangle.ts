@@ -30,15 +30,15 @@
 
 // export { newRectangle }
 
-interface Rectangle extends Shape {
-    width: number,
-    height: number,
-}
+// interface Rectangle extends Shape {
+//     width: number,
+//     height: number,
+// }
 
-function newRectangle(width: number, height: number): Rectangle {
+function newRectangle(width: number, height: number): Shape {
     return {
-        width,
-        height,
+        // width,
+        // height,
 
         computeArea: function (): number {
             return width * height
@@ -46,4 +46,4 @@ function newRectangle(width: number, height: number): Rectangle {
     }
 }
 
-export { Rectangle, newRectangle }
+export { newRectangle }
